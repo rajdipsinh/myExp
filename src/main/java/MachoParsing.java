@@ -103,7 +103,7 @@ public class MachoParsing {
         FileInputStream fis = null;
         MappedByteBuffer mbb;
         try {
-            fis = new FileInputStream("/Users/rajdip/lib/ppc/libadffmpeg.jnilib");
+            fis = new FileInputStream("binaryFile");
             FileChannel fileChannel = fis.getChannel();
             mbb = fileChannel.map(FileChannel.MapMode.READ_ONLY, 0, fileChannel.size());
             System.out.println(mbb.order());
